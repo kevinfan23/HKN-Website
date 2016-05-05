@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
+	<link rel='stylesheet' href='css/hover-min.css'/>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<title>UCLA Eta Kappa Nu, Iota Gamma Chapter</title>
+</head>
+<body>
+	
+	<!-- Overlay contact and sign-in backgrounds -->
+	<div id="overlay-contact"></div>
+	<div id="overlay-sign-in"></div>
+	
+	<!-- Sign-in form -->
+	<section class="sign-in-container">
+        <h1>Eta Kappa Nu</h1>
+        <hr>
+        <div class="content">
+	        <div class="signin-content">
+		        <form action="#" method="post" enctype="multipart/form-data">
+				    <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Your email">
+				    <input type="password" name="password" id="password" class="inpt" required="required" placeholder="Your password">
+				    <input type="checkbox" id="remember" class="checkbox" checked>
+				    <label for="remember">Remember me</label>
+				    <div class="submit-wrap">
+					    <input type="submit" value="Sign in" class="submit">
+					    <a href="#" class="forgot">Forgot your password?</a>
+				    </div>
+				</form>
+    		</div>
+        </div>
+	</section>
+	
+	<! Social media contacts -->
+	<nav class="social">
+		<a href="#"><i class="fa fa-facebook hvr-float"></i>hkn.ucla</a>
+		<a href="#" id="social-email"><i class="fa fa-envelope-o hvr-float"></i>hkn@ee.ucla.edu</a>
+		<a href="#"><i class="fa fa-instagram hvr-float"></i>@uclahkn</a>
+	</nav>
+	
+	<!-- Vertical navigation dots -->
+	<nav id="cd-vertical-nav" class="cd-nav">
+		<ul>
+			<li>
+				<a href="#section1" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Intro</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">About</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Student</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section4" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Corporate</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section5" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Events/Tutoring</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+	<!------------------------------------- 	MAIN SECTION	----------------------------------------->
+	
+	<!-- Section 1: Intro page -->
+	<section id="section1" class="cd-section">
+		
+		<!-- Navigation bar -->
+		<nav class="navbar-container">
+			<a href=‘#’><img src="img/hkn-logo.png" id="logo"></a>
+			<ul class="nav navbar">
+				<li class="cd-nav"><a href="#section2" data-number="2">ABOUT US</a></li>
+				<li class="cd-nav"><a href="#section3" data-number="3">STUDENT</a></li>
+				<li class="cd-nav"><a href="#section4" data-number="4">CORPORATE</a></li>
+				<li class="cd-nav"><a href="#section5" data-number="5">TUTORING/EVENTS</a></li>
+				<li><a href='#' id="contact">CONTACT</a></li>
+				<li><a href='#' id="sign-in">SIGN IN</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Utilities widgets -->
+		<div id="notes">
+			
+			<!-- Announcement -->
+			<div class="note">
+				<div class="line">ANNOUNCEMENTS</div>
+				<div class="line small mt">Induction ceremony at Week 8</div>
+			</div>
+				
+				
+		    <!-- Realtime weather and tutoring hours -->
+			<div class="double-group">
+				<div class="note weather-note">
+				  <div class="line small">Los Angeles</div>
+				  <div class="weather">
+				    <div class="line" id="degrees"></div>
+				  </div>
+				</div>
+				
+				<div id="tutoring" class="note">
+				  <div class="line small">Tutoring Hours Today</div>
+				  <div class="line large" id="tutoring-hours">10:00AM - 5:00PM</div>
+				</div>
+			</div> 
+				
+			<!-- Upcoming events -->
+			<div class="note">
+				<div class="note-event hvr-underline-reveal">
+				  <div class="line">HKN Kayaking Social <a href="#" class="rsvp">RSVP</a></div>
+				  <div class="line">
+				    <span class="small offset dates">May 10</span>
+				    <span class="small offset des">12:00PM Marina Aquatic Center</span>
+				  </div>
+				</div>    
+			</div> 
+			
+			<div class="note">
+				<div class="note-event hvr-underline-reveal">
+				  <div class="line">HKN Matlab Tutorial II <a href="#" class="rsvp">RSVP</a></div>
+				  <div class="line">
+				    <span class="small offset dates">May 10</span>
+				    <span class="small offset des">6:30PM Boelter 3760, Computer Lab</span>
+				  </div>
+				</div>    
+			</div>
+			
+		</div>
+		
+		<!-- Tutoring schedule link for mobile devices -->
+		<div class="tutoring-link"><a href="#">>>Click to view Tutoring Schedules</a></div>
+
+	</section>
+
+	<!-- Section 2: About page -->
+	<section id="section2" class="cd-section">
+		
+		<!-- Banner 1: Chapter history -->
+		<div id="banner1" class="insection-banner">
+			<div class="banner1-des">
+				<p>Founded at the University of Illinois in 1904, HKN consists of students, alumni, and other professionals who have demonstrated exceptional academic and professional accomplishments in the electrical and computer engineering fields.</p>
+				<br>
+				<p>UCLA's own chapter, the Iota Gamma Chapter, was founded on March 24, 1984, by Professor <a href="http://www.ee.ucla.edu/alan-n-willson-jr/" target="_blank" class="hkn-prof">Alan Willson</a>. Professor <a href="http://www.ee.ucla.edu/benjamin-williams/" target="_blank" class="hkn-prof">Benjamin Williams</a> serves as our current advisor.</p>
+			</div>
+		</div>
+		<img id="ucla-hkn" src="img/hkn-ucla.png">
+		
+		<!-- Banner 2: Blank ribbon for decoration -->
+		<div id="banner2" class="insection-banner"></div>
+		
+		<!-- Banner 3: Chapter awards -->
+		<div id="banner3" class="insection-banner">
+			<div class="hkn-awards">
+				<h4 class="awards-title">Outstanding Chapter Award</h4>
+				<p class="awards-years">2004 - 2015</p>
+			</div>
+			<div class="hkn-awards">
+				<h4 class="awards-title">Best Student Group Board Award</h4>
+				<p class="awards-years">2012 - 2013</p>
+			</div>
+		</div>
+		
+		<!-- Banner 4: Officers Left -->
+		<div id="banner4" class="insection-banner">
+			<div class="hkn-officers">
+				<div class="flex-container" id="section2.5">
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Albert Liu</h4>
+						<p class="officer-des">President</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Jessica Pham</h4>
+						<p class="officer-des">VP of Internal Affairs</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Zixuan Fan</h4>
+						<p class="officer-des">VP of Design</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Nicholas Chung</h4>
+						<p class="officer-des">VP of Operations</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Nathan Wong</h4>
+						<p class="officer-des">Senior Corporate Director</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Ryan Peterman</h4>
+						<p class="officer-des">Treasurer</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Grace Chin</h4>
+						<p class="officer-des">Secretary</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Cullen Quine</h4>
+						<p class="officer-des">Project Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Jenny Chieu</h4>
+						<p class="officer-des">Project Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Bohan Zhang</h4>
+						<p class="officer-des">Workshop Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Jeffrey Chen</h4>
+						<p class="officer-des">Workshop Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Isaac Yeo</h4>
+						<p class="officer-des">Workshop Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Rosemary Lee</h4>
+						<p class="officer-des">Corporate Liaison</p>
+						<img class="liaison-check" src="img/checkButton.png">
+					</div>	
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Quanjie Geng</h4>
+						<p class="officer-des">Corporate Liaison</p>
+						<img class="liaison-check" src="img/checkButton.png">
+					</div>	
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Zoe Nuyens</h4>
+						<p class="officer-des">Corporate Liaison</p>
+						<img class="liaison-check" src="img/checkButton.png">
+					</div>	
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Patrick Xu</h4>
+						<p class="officer-des">Corporate Liaison</p>
+						<img class="liaison-check" src="img/checkButton.png">
+					</div>
+				</div>	
+			</div>
+			
+			<!-- Banner 4: Officers Right -->
+			<div class="hkn-officers">
+				<div class="flex-container">
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Chanyeol Choi</h4>
+						<p class="officer-des">Publicity</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Anthony Zhu</h4>
+						<p class="officer-des">Publicity</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Yueyang Mi</h4>
+						<p class="officer-des">Webmaster</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Prashanth Swaminathan</h4>
+						<p class="officer-des">Webmaster</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Victor Zhang</h4>
+						<p class="officer-des">Webmaster</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Billy Chen</h4>
+						<p class="officer-des">Membership Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Mignon Huang</h4>
+						<p class="officer-des">Membership Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Ali Jishi</h4>
+						<p class="officer-des">Mentorship Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Jason Jiang</h4>
+						<p class="officer-des">Mentorship Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Hannaneh Hojaiji</h4>
+						<p class="officer-des">mentorship Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Dohyun Choi</h4>
+						<p class="officer-des">Social Chair</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Steven Moran</h4>
+						<p class="officer-des">Alumni Outreach</p>
+					</div>
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Duymong Nguyen</h4>
+						<p class="officer-des">Senior Advisor</p>
+					</div>	
+					<div class="flex-item hvr-underline-reveal">
+						<h4 class="officer-name">Christina Yang</h4>
+						<p class="officer-des">Senior Advisor</p>
+					</div>		
+				</div>	
+			</div>
+			</div>
+	</section>
+
+	<!-- Section 3: Member requirements -->
+	<section id="section3" class="cd-section">
+		
+		<!-- Panel left: HKN member T-shirt -->
+		<div id="student-banner1" class="insection-banner">
+			<div class"hkn-tshirt-container">
+				<img id="hkn-tshirt" src="img/t-shirt.png">
+			</div>
+			
+			<!-- Panel right: HKN member requirements -->
+			<div class="hkn-member">
+				<p class="member-des">At UCLA, membership in HKN is extended to Electrical Engineering  and Computer Science and Engineering undergraduates in the:</p>
+				
+				<!-- Animation circles -->
+				<div class="member-circle-container">
+					<div class="member-circle">
+						<svg viewBox="0 0 150 150">
+							<circle class="one" r="75" cx="75" cy="75"/>
+							<p class="top">TOP</p>
+							<span class="num">1/4</span>
+							<p class="standing">of Junior Class</p>
+						</svg>
+					</div>
+					<div class="member-circle">
+						<svg viewBox="0 0 150 150">
+							<circle class="two" r="75" cx="75" cy="75"/>
+							<p class="top">TOP</p>
+							<span class="num">1/3</span>
+							<p class="standing">of Senior Class</p>
+						</svg>
+					</div>				
+				</div>
+				<p class="member-des">Prospective members then participate in projects and social activities that demonstrate their dedication to serving fellow members of the Electrical and Computer Engineering community, the ultimate goal of HKN.</p>
+			</div>
+		</div>
+		
+		<!-- Banner 2: HKN lounge featured -->
+		<div id="student-banner2" class="insection-banner">
+			<div class="animate-grayscale"></div>
+			<h4 class="lounge-title">Need a place to study?</h4>
+			<p class="lounge-des">UNDERGRADUATE LOUNGE
+				<br>
+				ENGINEERING IV, 67-127 
+				<br>
+				420 Westwood Plaza, Los Angeles, CA 90095
+			</p>
+		</div>
+	</section>
+
+
+	<!-- Section 4: HKN Corporate Information -->
+	<section id="section4" class="cd-section">
+		
+			<!-- Panel Left: HKN business card -->
+			<div class="hkn-card">
+				<img id="business-card" src="img/HKN_BusinessCardBack.jpg">
+				<img id="card-shadow" src="img/shadow.png">
+			</div>
+			
+			<!-- Panel Right: HKN corporate contacts and EEP information -->
+			<div class="corporate-contact">
+				<h4 class="liaison">Contact our <a href="#section2.5" data-number="2.5" id="liaison-contatc"><u>Corporate Liaisons</u></a> for 
+				<br>
+				corporate opportunities</h4>
+				<ul class="contact-buttons">
+					<li class="corporate-button"><a class="button-content" href="#">Become our Sponsor</a></li>
+					<li class="corporate-button"><a class="button-content" href="#">Sponsor a workshop</a></li>
+					<li class="corporate-button"><a class="button-content" href="#">Hold an info session</a></li>					
+			</div>
+	</section>
+
+	<!-- Section 5: HKN Tutoring and Events Calendars -->
+	<section id="section5" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section>
+		
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.simpleWeather.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
